@@ -1,0 +1,12 @@
+E:\dotnet\dotnet.service\bin\Debug\netcoreapp3.1\dotnet.service.deps.json
+E:\dotnet\dotnet.service\bin\Debug\netcoreapp3.1\dotnet.service.dll
+E:\dotnet\dotnet.service\bin\Debug\netcoreapp3.1\dotnet.service.pdb
+E:\dotnet\dotnet.service\bin\Debug\netcoreapp3.1\dotnet.data.dll
+E:\dotnet\dotnet.service\bin\Debug\netcoreapp3.1\dotnet.data.pdb
+E:\dotnet\dotnet.service\obj\Debug\netcoreapp3.1\dotnet.service.csproj.AssemblyReference.cache
+E:\dotnet\dotnet.service\obj\Debug\netcoreapp3.1\dotnet.service.AssemblyInfoInputs.cache
+E:\dotnet\dotnet.service\obj\Debug\netcoreapp3.1\dotnet.service.AssemblyInfo.cs
+E:\dotnet\dotnet.service\obj\Debug\netcoreapp3.1\dotnet.service.csproj.CoreCompileInputs.cache
+E:\dotnet\dotnet.service\obj\Debug\netcoreapp3.1\dotnet.service.csproj.CopyComplete
+E:\dotnet\dotnet.service\obj\Debug\netcoreapp3.1\dotnet.service.dll
+E:\dotnet\dotnet.service\obj\Debug\netcoreapp3.1\dotnet.service.pdb
