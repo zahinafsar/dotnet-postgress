@@ -8,7 +8,6 @@ namespace dotnet.data.Models
         public DateTime created { get; set; }
         public string userName { get; set; }
         public string phoneNumber { get; set; }
-
         public Profile Profile { get; set; }
     }
 }

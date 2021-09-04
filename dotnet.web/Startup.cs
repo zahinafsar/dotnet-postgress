@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using dotnet.data;
+using dotnet.service.AuthService;
 using dotnet.service.UserService;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -37,6 +38,7 @@ namespace dotnet.web
                 opts.UseNpgsql(Configuration.GetConnectionString("db.dev"));
             });
             services.AddTransient<IUserService, UserService>();
+            services.AddTransient<IAuthService, AuthService>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "dotnet.web", Version = "v1" });

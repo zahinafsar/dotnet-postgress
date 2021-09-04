@@ -11,5 +11,6 @@ namespace dotnet.data
         public UserDbContext(DbContextOptions option) : base(option) { }
         public virtual DbSet<User> User { get; set; }
         public virtual DbSet<Profile> Profile { get; set; }
+        public virtual DbSet<UserRegister> UserRegister { get; set; }
     }
 }

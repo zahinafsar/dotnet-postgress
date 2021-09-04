@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using dotnet.data;
 using dotnet.data.Models;
 
@@ -24,7 +25,9 @@ namespace dotnet.service.UserService
         public User GetUser(int id)
         {
             return _db.User.Find(id);
+
         }
+
         public ServiceResponse<User> CreateUser(User user)
         {
             try
@@ -52,14 +55,42 @@ namespace dotnet.service.UserService
             }
         }
 
-        // public ServiceResponse<User> ArchiveUser(int Id)
-        // {
-        //     throw new NotImplementedException();
-        // }
-
         public ServiceResponse<User> DeleteUser(int Id)
         {
-            throw new NotImplementedException();
+            var user = _db.User.Find(Id);
+            if (user == null)
+            {
+                return new ServiceResponse<User>
+                {
+                    Data = { },
+                    IsSuccess = false,
+                    Message = "User Not Found",
+                    Time = DateTime.UtcNow
+                };
+            }
+            try
+            {
+                _db.User.Remove(user);
+                _db.SaveChanges();
+
+                return new ServiceResponse<User>
+                {
+                    Data = { },
+                    IsSuccess = true,
+                    Message = "User has been Deleted Succesfully",
+                    Time = DateTime.UtcNow
+                };
+            }
+            catch (Exception e)
+            {
+                return new ServiceResponse<User>
+                {
+                    Data = { },
+                    IsSuccess = false,
+                    Message = e.StackTrace.ToString(),
+                    Time = DateTime.UtcNow
+                };
+            }
         }
     }
 

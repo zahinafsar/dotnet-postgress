@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\dotnet\\dotnet.web\\dotnet.web.csproj": {}
+    "I:\\personal\\dotnet\\dotnet.web\\dotnet.web.csproj": {}
   },
   "projects": {
-    "E:\\dotnet\\dotnet.data\\dotnet.data.csproj": {
+    "I:\\personal\\dotnet\\dotnet.data\\dotnet.data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\dotnet\\dotnet.data\\dotnet.data.csproj",
+        "projectUniqueName": "I:\\personal\\dotnet\\dotnet.data\\dotnet.data.csproj",
         "projectName": "dotnet.data",
-        "projectPath": "E:\\dotnet\\dotnet.data\\dotnet.data.csproj",
+        "projectPath": "I:\\personal\\dotnet\\dotnet.data\\dotnet.data.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "E:\\dotnet\\dotnet.data\\obj\\",
+        "outputPath": "I:\\personal\\dotnet\\dotnet.data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -76,14 +76,14 @@
         }
       }
     },
-    "E:\\dotnet\\dotnet.service\\dotnet.service.csproj": {
+    "I:\\personal\\dotnet\\dotnet.service\\dotnet.service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\dotnet\\dotnet.service\\dotnet.service.csproj",
+        "projectUniqueName": "I:\\personal\\dotnet\\dotnet.service\\dotnet.service.csproj",
         "projectName": "dotnet.service",
-        "projectPath": "E:\\dotnet\\dotnet.service\\dotnet.service.csproj",
+        "projectPath": "I:\\personal\\dotnet\\dotnet.service\\dotnet.service.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "E:\\dotnet\\dotnet.service\\obj\\",
+        "outputPath": "I:\\personal\\dotnet\\dotnet.service\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -100,8 +100,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "E:\\dotnet\\dotnet.data\\dotnet.data.csproj": {
-                "projectPath": "E:\\dotnet\\dotnet.data\\dotnet.data.csproj"
+              "I:\\personal\\dotnet\\dotnet.data\\dotnet.data.csproj": {
+                "projectPath": "I:\\personal\\dotnet\\dotnet.data\\dotnet.data.csproj"
               }
             }
           }
@@ -116,6 +116,10 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.2, )"
+            },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.9, )"
@@ -140,14 +144,14 @@
         }
       }
     },
-    "E:\\dotnet\\dotnet.web\\dotnet.web.csproj": {
+    "I:\\personal\\dotnet\\dotnet.web\\dotnet.web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\dotnet\\dotnet.web\\dotnet.web.csproj",
+        "projectUniqueName": "I:\\personal\\dotnet\\dotnet.web\\dotnet.web.csproj",
         "projectName": "dotnet.web",
-        "projectPath": "E:\\dotnet\\dotnet.web\\dotnet.web.csproj",
+        "projectPath": "I:\\personal\\dotnet\\dotnet.web\\dotnet.web.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "E:\\dotnet\\dotnet.web\\obj\\",
+        "outputPath": "I:\\personal\\dotnet\\dotnet.web\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -164,11 +168,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "E:\\dotnet\\dotnet.data\\dotnet.data.csproj": {
-                "projectPath": "E:\\dotnet\\dotnet.data\\dotnet.data.csproj"
+              "I:\\personal\\dotnet\\dotnet.data\\dotnet.data.csproj": {
+                "projectPath": "I:\\personal\\dotnet\\dotnet.data\\dotnet.data.csproj"
               },
-              "E:\\dotnet\\dotnet.service\\dotnet.service.csproj": {
-                "projectPath": "E:\\dotnet\\dotnet.service\\dotnet.service.csproj"
+              "I:\\personal\\dotnet\\dotnet.service\\dotnet.service.csproj": {
+                "projectPath": "I:\\personal\\dotnet\\dotnet.service\\dotnet.service.csproj"
               }
             }
           }

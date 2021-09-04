@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "3YL/oJA3/T8DbKBKnqwqdgv2Tdcko6wceyBLucnkDtljNrQ6OakuxdPBO2zM3pXNHUm9lBWXYDq5F+nVqH5MAQ==",
+  "dgSpecHash": "KcFScIiuzUXbg1eFWpd+h2v+bP58oorrWkjqgIIkuTE6gij3YsWP48ui8sQ5dkTZo5s7fARkUpUhh6qXFqoWNw==",
   "success": true,
-  "projectFilePath": "E:\\dotnet\\dotnet.service\\dotnet.service.csproj",
+  "projectFilePath": "I:\\personal\\dotnet\\dotnet.service\\dotnet.service.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\bcrypt.net-next\\4.0.2\\bcrypt.net-next.4.0.2.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.authentication.cookies\\2.2.0\\microsoft.aspnetcore.authentication.cookies.2.2.0.nupkg.sha512",
