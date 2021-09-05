@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using dotnet.data;
 using dotnet.service.AuthService;
+using dotnet.service.Helper;
 using dotnet.service.UserService;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -30,7 +31,7 @@ namespace dotnet.web
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
+            services.AddCors();
             services.AddControllers();
             services.AddDbContext<UserDbContext>(opts =>
             {
@@ -39,6 +40,7 @@ namespace dotnet.web
             });
             services.AddTransient<IUserService, UserService>();
             services.AddTransient<IAuthService, AuthService>();
+            services.AddTransient<JwtService>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "dotnet.web", Version = "v1" });
@@ -59,6 +61,12 @@ namespace dotnet.web
 
             app.UseRouting();
 
+            app.UseCors(option => option
+                .AllowAnyHeader()
+                .AllowAnyHeader()
+                .AllowCredentials()
+            );
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

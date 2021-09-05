@@ -152,3 +152,7 @@ I:\personal\dotnet\dotnet.web\obj\Debug\net5.0\ref\dotnet.web.dll
 I:\personal\dotnet\dotnet.web\obj\Debug\net5.0\dotnet.web.pdb
 I:\personal\dotnet\dotnet.web\obj\Debug\net5.0\dotnet.web.genruntimeconfig.cache
 I:\personal\dotnet\dotnet.web\bin\Debug\net5.0\BCrypt.Net-Next.dll
+I:\personal\dotnet\dotnet.web\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+I:\personal\dotnet\dotnet.web\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+I:\personal\dotnet\dotnet.web\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+I:\personal\dotnet\dotnet.web\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll

@@ -25,7 +25,6 @@ namespace dotnet.service.UserService
         public User GetUser(int id)
         {
             return _db.User.Find(id);
-
         }
 
         public ServiceResponse<User> CreateUser(User user)

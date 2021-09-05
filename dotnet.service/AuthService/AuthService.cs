@@ -17,6 +17,26 @@ namespace dotnet.service.AuthService
             try
             {
                 var user = _db.UserRegister.FirstOrDefault(cred => cred.email == credential.email);
+                if (user == null)
+                {
+                    return new ServiceResponse<UserRegister>
+                    {
+                        Data = { },
+                        IsSuccess = false,
+                        Message = "User not found.",
+                        Time = DateTime.UtcNow
+                    };
+                }
+                if (!BCrypt.Net.BCrypt.Verify(credential.password, user.password))
+                {
+                    return new ServiceResponse<UserRegister>
+                    {
+                        Data = { },
+                        IsSuccess = false,
+                        Message = "Invalied password.",
+                        Time = DateTime.UtcNow
+                    };
+                }
                 return new ServiceResponse<UserRegister>
                 {
                     Data = user,
