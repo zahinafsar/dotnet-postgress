@@ -91,6 +91,44 @@ namespace dotnet.service.UserService
                 };
             }
         }
+
+        public ServiceResponse<User> AddProfile(int id, Profile profile)
+        {
+            var user = _db.User.Find(id);
+            if (user == null)
+            {
+                return new ServiceResponse<User>
+                {
+                    Data = { },
+                    IsSuccess = false,
+                    Message = "User not found!",
+                    Time = DateTime.UtcNow
+                };
+            }
+            try
+            {
+                user.Profile = profile;
+                // _db.User.Attach(user).Property(x => x.Profile).IsModified = true;
+                _db.SaveChanges();
+                return new ServiceResponse<User>
+                {
+                    Data = user,
+                    IsSuccess = true,
+                    Message = "Your profile has been added!",
+                    Time = DateTime.UtcNow
+                };
+            }
+            catch (Exception e)
+            {
+                return new ServiceResponse<User>
+                {
+                    Data = { },
+                    IsSuccess = false,
+                    Message = e.StackTrace,
+                    Time = DateTime.UtcNow
+                };
+            }
+        }
     }
 
 }

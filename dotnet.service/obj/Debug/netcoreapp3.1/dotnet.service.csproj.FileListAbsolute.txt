@@ -31,6 +31,6 @@ I:\personal\dotnet\dotnet.service\obj\Debug\netcoreapp3.1\dotnet.service.csproj.
 I:\personal\dotnet\dotnet.service\obj\Debug\netcoreapp3.1\dotnet.service.AssemblyInfoInputs.cache
 I:\personal\dotnet\dotnet.service\obj\Debug\netcoreapp3.1\dotnet.service.AssemblyInfo.cs
 I:\personal\dotnet\dotnet.service\obj\Debug\netcoreapp3.1\dotnet.service.csproj.CoreCompileInputs.cache
-I:\personal\dotnet\dotnet.service\obj\Debug\netcoreapp3.1\dotnet.service.csproj.CopyComplete
 I:\personal\dotnet\dotnet.service\obj\Debug\netcoreapp3.1\dotnet.service.dll
 I:\personal\dotnet\dotnet.service\obj\Debug\netcoreapp3.1\dotnet.service.pdb
+I:\personal\dotnet\dotnet.service\obj\Debug\netcoreapp3.1\dotnet.service.GeneratedMSBuildEditorConfig.editorconfig

@@ -1,10 +1,13 @@
 using System;
 using System.IdentityModel.Tokens.Jwt;
+using System.Net.Http;
+using System.Threading.Tasks;
 using dotnet.data.Models;
 using dotnet.service.Helper;
 using dotnet.service.UserService;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Newtonsoft.Json;
 
 namespace dotnet.web.Controllers
 {
@@ -15,11 +18,13 @@ namespace dotnet.web.Controllers
         public readonly ILogger<UserController> _logger;
         public readonly IUserService _userService;
         public readonly JwtService _jwtService;
-        public UserController(ILogger<UserController> logger, IUserService userService, JwtService jwtService)
+        public readonly IHttpClientFactory _httpClient;
+        public UserController(ILogger<UserController> logger, IUserService userService, JwtService jwtService, IHttpClientFactory httpClient)
         {
             _logger = logger;
             _userService = userService;
             _jwtService = jwtService;
+            _httpClient = httpClient;
         }
         [HttpGet]
         public ActionResult GetAllUsers()
@@ -51,6 +56,12 @@ namespace dotnet.web.Controllers
                 return Unauthorized();
             }
         }
+        [HttpPost("{id}/profile")]
+        public ActionResult AddProfile(int id, [FromBody] Profile profile)
+        {
+            var res = _userService.AddProfile(id, profile);
+            return Ok(res);
+        }
         [HttpDelete("{id}")]
         public ActionResult DeleteUser(int id)
         {
@@ -66,6 +77,15 @@ namespace dotnet.web.Controllers
             {
                 return Unauthorized();
             }
+        }
+        [HttpGet("weather")]
+        public async Task<ActionResult> GetWeather(int id)
+        {
+            var http = _httpClient.CreateClient();
+            var response = await http.GetAsync("https://jsonplaceholder.typicode.com/todos");
+            var contentAsString = await response.Content.ReadAsStringAsync();
+            HttpUser[] content = JsonConvert.DeserializeObject<HttpUser[]>(contentAsString);
+            return Ok(content);
         }
     }
 }

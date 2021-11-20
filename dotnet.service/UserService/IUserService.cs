@@ -10,6 +10,7 @@ namespace dotnet.service.UserService
         List<User> GetAllUsers();
         User GetUser(int Id);
         ServiceResponse<User> CreateUser(User user);
+        ServiceResponse<User> AddProfile(int id, Profile profile);
         ServiceResponse<User> DeleteUser(int Id);
     }
 }

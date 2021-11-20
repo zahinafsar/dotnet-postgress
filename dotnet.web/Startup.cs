@@ -33,6 +33,7 @@ namespace dotnet.web
         {
             services.AddCors();
             services.AddControllers();
+            services.AddHttpClient();
             services.AddDbContext<UserDbContext>(opts =>
             {
                 opts.EnableDetailedErrors();

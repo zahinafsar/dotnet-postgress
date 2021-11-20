@@ -25,3 +25,4 @@ I:\personal\dotnet\dotnet.data\obj\Debug\netcoreapp3.1\dotnet.data.AssemblyInfo.
 I:\personal\dotnet\dotnet.data\obj\Debug\netcoreapp3.1\dotnet.data.csproj.CoreCompileInputs.cache
 I:\personal\dotnet\dotnet.data\obj\Debug\netcoreapp3.1\dotnet.data.dll
 I:\personal\dotnet\dotnet.data\obj\Debug\netcoreapp3.1\dotnet.data.pdb
+I:\personal\dotnet\dotnet.data\obj\Debug\netcoreapp3.1\dotnet.data.GeneratedMSBuildEditorConfig.editorconfig

@@ -146,7 +146,6 @@ I:\personal\dotnet\dotnet.web\obj\Debug\net5.0\staticwebassets\dotnet.web.Static
 I:\personal\dotnet\dotnet.web\obj\Debug\net5.0\staticwebassets\dotnet.web.StaticWebAssets.xml
 I:\personal\dotnet\dotnet.web\obj\Debug\net5.0\scopedcss\bundle\dotnet.web.styles.css
 I:\personal\dotnet\dotnet.web\obj\Debug\net5.0\dotnet.web.RazorTargetAssemblyInfo.cache
-I:\personal\dotnet\dotnet.web\obj\Debug\net5.0\dotnet.web.csproj.CopyComplete
 I:\personal\dotnet\dotnet.web\obj\Debug\net5.0\dotnet.web.dll
 I:\personal\dotnet\dotnet.web\obj\Debug\net5.0\ref\dotnet.web.dll
 I:\personal\dotnet\dotnet.web\obj\Debug\net5.0\dotnet.web.pdb
